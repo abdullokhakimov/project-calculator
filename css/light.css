@@ -1,0 +1,79 @@
+*{
+	transition: 0.5s;
+}
+:root{
+	--calculator-light-bg: #FFFFFF;
+
+	--calculator-themeicon-light-bg: #F9F9F9;
+
+	--calculator-decision-color-light: #2A2E36;
+
+	--calculator-form-btn-bg-light: #F7F7F7;
+
+	--red: #D05E5F;
+	--blue: #26EECA;
+}
+
+body{
+  background: #fff;
+}
+
+.calculator{
+	background: rgba(250, 250, 250, 0.5);
+}
+.calculator__theme{
+	background: var(--calculator-themeicon-light-bg);
+}
+.calculator__decision,
+.number1,
+.number2{
+	color: var(--calculator-decision-color-light);
+}
+.calculator__answer{
+	color: var(--calculator-decision-color-light);
+}
+
+.calculator__form{
+	background: rgba(249, 249, 249, 0.5);
+}
+.calculator__form__btn,
+.calculator__form__num{
+	background: var(--calculator-form-btn-bg-light);
+}
+.calculator__form__btn:hover,
+.calculator__form__num:hover{
+	background: #f7f7f756;
+}
+.calculator__form__btn:active,
+.calculator__form__num:active{
+	background: #b6b6b6;
+}
+.calculator__form__num{
+	color: #2D3139;
+}
+.clearAll,
+.clearOnly,
+.percent{
+	color: var(--blue);
+}
+.division,
+.multiplication,
+.minus,
+.plus,
+.equally{
+	color: var(--red);
+}
+.calculator__form__img{
+	fill: #2D3139;
+}
+.calculator__theme__light svg{
+	animation: lightThemeIcon 6s linear infinite;
+}
+@keyframes lightThemeIcon {
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}

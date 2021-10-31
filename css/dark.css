@@ -1,0 +1,86 @@
+*{
+	transition: 0.5s;
+}
+:root{
+	--calculator-dark-bg: #22252D;
+
+	--calculator-themeicon-dark-bg: #292D36;
+
+	--calculator-decision-color-dark: #FFFFFF;
+
+	--calculator-form-btn-bg-dark: #272B33;
+
+	--red: #D05E5F;
+	--blue: #26EECA;
+}
+
+body{
+  background: var(--calculator-dark-bg);
+}
+
+.calculator{
+	background: rgba(34, 37, 45, 0.5);
+}
+.calculator__theme{
+	background: var(--calculator-themeicon-dark-bg);
+}
+.calculator__decision,
+.number1,
+.number2{
+	color: var(--calculator-decision-color-dark);
+}
+.calculator__answer{
+	color: var(--calculator-decision-color-dark);
+}
+
+.calculator__form{
+	background: rgba(41, 45, 54, 0.5);
+}
+.calculator__form__btn,
+.calculator__form__num{
+	background: var(--calculator-form-btn-bg-dark);
+}
+.calculator__form__btn:hover,
+.calculator__form__num:hover{
+	background: #272b336c;
+	transition: 0.1s;
+}
+.calculator__form__btn:active,
+.calculator__form__num:active{
+	background: #444c5a;
+}
+.calculator__form__num{
+	color: #ffffff;
+}
+.clearAll,
+.clearOnly,
+.percent{
+	color: var(--blue);
+}
+.division,
+.multiplication,
+.minus,
+.plus,
+.equally{
+	color: var(--red);
+}
+.calculator__form__img{
+	fill: white;
+}
+.calculator__theme__dark{
+	fill: #ffffff;
+	animation: darkThemeIcon 1.5s infinite ease-in-out;
+	animation-delay: 2s;
+}
+
+@keyframes darkThemeIcon {
+	0%{
+		opacity: 1;
+	}
+	50%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
